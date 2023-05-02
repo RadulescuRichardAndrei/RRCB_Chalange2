@@ -15,24 +15,33 @@
     </header>
 
     <div role="contentinfo">
-      <ol>
+      <ol role ="directory">
         <li>
-          <a href="#introduction">Introduction</a>
+          <a href="#abstract">Abstract</a>
         </li>
         <li>
-          <a href="#personas">Personas</a>
+          <a href="#introduction">Introduction</a>
         </li>
         <li>
           <a href="#itp">Interaction type paradigms</a>
         </li>
         <li>
+          <a href="#app">Prototype for the application</a>
+        </li>
+        <li>
           <a href="#idp">Interaction design patterns</a>
         </li>
         <li>
-          <a href="#user-flow">User flows</a>
+          <a href="#user-flow">User flow</a>
         </li>
         <li>
-          <a href="#afe">Affective factors & emotion</a>
+          <a href="#personas">Personas</a>
+        </li>
+        <li>
+          <a href="#use-cases">Use-cases</a>
+        </li>
+        <li>
+          <a href="#afe">Affective factors & emotions</a>
         </li>
         <li>
           <a href="#contribution">
@@ -49,54 +58,209 @@
         </dd>
       </dl>
     </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+       The aim of the project is to envision and design an interactive solution for a recreation of the game Space Invaders done in virtual reality.
+      </p>
+    </section>
     <section id="introduction" role="doc-introduction">
       <!-- review? -->
       <h2>Introduction</h2>
       <p>
-       
+        Space Invaders is a classic arcade video game developed by Tomohiro Nishikado and released by Taito in 1978. The objective of the game is to control a laser cannon at the bottom of the screen and shoot down waves of descending aliens before they reach and destroy the player's ship.
       </p>
-    </section>
-    <section id="personas" >
-      <!-- review? -->
-      <h2>Personas</h2>
       <p>
-       
+        The way we envision this game recreation in VR is by having the player stationary in a certain place and have the aliens come from different angles. The player will use the VR headset to look around and use the controller to aim and shoot the aliens.
       </p>
     </section>
+    
     <section id="itp" >
       <!-- review? -->
       <h2>Interaction type paradigms</h2>
       <p>
-       
+       If we were to compare the original game with the VR game we envisioned, the interaction paradigms used are quite different due to the nature of the platforms they operate on.
       </p>
+      <p>
+        In the VR version, the user is immersed in a virtual environment, and the interaction paradigm is based on natural movements and gestures. The user interacts with the game world through the use of motion controllers or gestures tracked by sensors. This type of interaction allows for a more natural and immersive gameplay experience, creating a sense of presence that is not possible in traditional arcade games.
+      </p>
+      <p>
+        In the arcade version, the interaction paradigm for arcade games is based on physical controls, such as joysticks, buttons. These controls are designed to be simple and intuitive, allowing players to quickly understand and play the game.
+      </p>
+      <p>
+        The biggest differences between the two interaction paradigms are the haptic feedback of the vr controllers, the virtual environment and the simple and fast-paced controls, but less immersive, of the arcade version.
+      </p>
+    </section>
+    <section id="app">
+      <h2>Prototype for the application</h2>
+      <ol>
+        <li>
+          <p>Sketches</p>
+          <table style="width: 100%">
+            <tr>
+              <th colspan="2">Sketches for the application</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="./Sketches/main_menu.jpg" target="_blank">
+                <figure>
+                 <img src="./Sketches/main_menu.jpg" alt="Main Menu." style="width: 100%">
+                 <figcaption>Main Menu</figcaption>
+                </figure>
+                </a>
+              </td>
+              <td>
+                <a href="./Sketches/play_menu.jpg" target="_blank">
+                <figure>
+                 <img src="./Sketches/play_menu.jpg" alt="Play Select Menu." style="width: 100%">
+                 <figcaption>Play Select Menu </figcaption>
+                </figure>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./Sketches/play_level.jpg" target="_blank">
+                <figure>
+                 <img src="./Sketches/play_level.jpg" alt="Story Mode Play Menu." style="width: 100%">
+                 <figcaption>Story Mode Play Menu</figcaption>
+                </figure>
+                </a>
+              </td>
+              <td>
+                <a href="./Sketches/game_play.jpg" target="_blank">
+                <figure>
+                 <img src="./Sketches/game_play.jpg" alt="Inside game." style="width: 100%">
+                 <figcaption>Inside the game</figcaption>
+                </figure>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li>
+          <p>Prototype</p>
+          <p>For the prototype we used figma website and this are the menus.</p>
+          <ul>
+            <li>
+              <a href="./Figma/Figma_Wireframes.pdf" target="_blank">Wireframes</a>
+            </li>
+            <li>
+              <a href="./Figma/Figma_GameMenus.pdf" target="_blank">Game Menus</a>
+            </li>
+          </ul>
+          <p>A link for the simulation can be accesed from 
+            <a href="https://www.figma.com/proto/ma7f0p0dOaR8zBfeVsxav9/Untitled?type=design&node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" target="_black">here</a></p>
+        </li>
+        <li>
+          <p>VR + Figma Prototype simulation</p>
+          <video width="100%" controls muted>
+            <source src="./Video/Simulation.mp4" type="video/mp4">
+            <source src="./Video/Simulation.webm" type="video/webm">
+              Your browser does not support the video tag.
+          </video>
+        </li>
+      </ol>
+      
     </section>
     <section id="idp" >
       <!-- review? -->
       <h2>Interaction design patterns</h2>
       <p>
-       
+       During the design of the interface prototype we used the following design patterns
+      </p>
+      <ul>
+        <li>
+          <p>Horizontal scroll.</p>
+          <p>This was used for selecting the level to be played from a long list of levels.</p>
+        </li>
+
+        <li>
+          <p>Pop-up window</p>
+          <p>This was used for the settings menu.</p>
+        </li>
+        <li>
+          <p>Haptic feedback</p>
+          <p>During the game when you shoot with your weapons the controller will vibrate to give the player a more immersive feeling.</p>
+        </li>
+        <li>
+          <p>Object highlighting</p>
+          <p>During the game the menus will have highlighted parts, for example buttons, to give the player a feedback when he points in-game with the controller.</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="user-flow">
+      <h2>User flow</h2>
+      <figure>
+            <img src="./Images/User_Flow.jpg" alt="User Flow." style="width: 100%">
+          <figcaption>User Flow for the application.</figcaption>
+      </figure>
+    </section>
+    <section id="personas" >
+      <!-- review? -->
+      <h2>Personas</h2>
+      <p>
+      When thinking about the users we created the following 4 <a href="./personas.html" target="_blank">personas</a>.
       </p>
     </section>
-    <section id="user-flows" >
+    <section id="use-cases" >
       <!-- review? -->
-      <h2>User flows</h2>
-      <p>
-       
-      </p>
+      <h2>Use-cases</h2>
+      <ul>
+        <li>
+          <p>First use-case. Higher High Score.</p>
+          <p> In this use-case we can see the process of a player that launches the game in endless mode. First the player initializes the game, in this case on PC, then the endless mode is selected. The player progresses through the run and when it's over the final score is displayed, informing the player in this case that they got a high score.</p>
+          <figure>
+            <img src="./Storyboards/SB1_Higher_High_Score.png" alt="Storyboard High Score." style="width: 100%">
+          <figcaption>Storyboard for the use-case Higher High Score.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <p>Second use-case. Fitting Gift.</p>
+          <p> In this use-case we can see the process of a mother that wants to buy the game for her kid, so she researches to see that the game is apropriate for her kid, and once it is confirmed she proceeds to buy the game for her kid's birthday.</p>
+          <figure>
+            <img src="./Storyboards/SB2_Fitting_gift.png" alt="Storyboard Fitting Gift." style="width: 100%">
+          <figcaption>Storyboard for the use-case Fitting Gift.</figcaption>
+          </figure>
+        </li>
+      </ul>
     </section>
     <section id="afe" >
       <!-- review? -->
-      <h2>Affective factors and emotion</h2>
+      <h2>Affective factors and emotions</h2>
       <p>
-       
+       Affective factors and emotions play a crucial role in HCI, especially in the context of games. For our game, some factors present are the following:
       </p>
+      <ol>
+        <li>
+        <p>User Experience(UX)</p>
+        <p> This being an arcade-themed game, elements of UX such as sound effects, music, color schemes and character
+        designs give off a neutral vibe to the game, meaning in can be aproached by everyone.</p>
+        </li>
+        <li>
+          <p>Player Personality</p>
+          <p> The game is built for every type of player, from the casual player, that just wants to have fun, to the competitive one, that wants to have a very high score and show off.</p>
+        </li>
+        <li>
+          <p>Player feedback</p>
+          <p>Feedback is always taken into consideration, where players' opinions of the game are taken into consideration, making the game feel more alive</p>
+        </li>
+      </ol>
     </section>
     <section id="contributions" >
       <!-- review? -->
       <h2>Contributions</h2>
-      <p>
-       
-      </p>
+      <ul>
+        <li>
+        <p>Radulescu Richard-Andrei </p>
+        <p>Interaction type paradigms. Interaction design patterns. User flow. Prototype. Wireframes. Sketches</p>
+        </li>
+        <li>
+          <p>Costea Bogdan</p>
+          <p>Personas. Use-cases. Affective factors and emotions. Storyboards</p>
+        </li>
+      </ul>
     </section>
 
       
